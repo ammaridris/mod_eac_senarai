@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+	<name>Modul Memaparkan Senarai Data Dari Database Luar</name>
+	<author>Ammar Idris</author>
+	<creationDate>November 2022</creationDate>
+	<copyright>Copyright (C) AIEAC. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>am87mar@gmail.com</authorEmail>
+	<authorUrl>www.ammaridris.com</authorUrl>
+	<version>1.0</version>
+	<description>Modul Memaparkan Senarai Data Dari Database Luar</description>
+	
+	<files>
+		<filename module="mod_eac_senarai">mod_eac_senarai.php</filename>
+		<filename>mod_eac_senarai_hotel.php</filename>
+		<filename>mod_eac_senarai_syarikat.php</filename>
+		<filename>mod_eac_senarai_ipta.php</filename>
+		
+		<filename>css_dtable_uikit.css</filename>
+		<filename>js_dtable_jquery.js</filename>
+		<filename>js_dtable_jquerytable.js</filename>
+		<filename>js_dtable_uikit.js</filename>
+		
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_eac_senarai.ini</language>
+		<language tag="ms-MY">ms-MY.mod_eac_senarai.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="senarai"
+					type="list"
+					label="Jenis Senarai"
+					description="Jenis Senarai" >
+					<option value="syarikat">Senarai Syarikat</option>
+					<option value="hotel">Senarai Hotel</option>
+					<option value="ipta">Senarai IPTA</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
